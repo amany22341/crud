@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="curd">
+        <div id="alertt">
+        </div>
+        <div class="head">
+            <h1>curds</h1>
+            <p>product management system</p>
+        </div><!--heed-->
+        <div class="inputs">
+            <input type="text" id="title" placeholder="Title">
+            <div class="price">
+                <input onkeyup="getTotal()" type="number" id="price" placeholder="Price">
+                <input onkeyup="getTotal()" type="number" id="taxes" placeholder="Taxes">
+                <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+                <input onkeyup="getTotal()" type="number" id="discount" placeholder="Discount">
+                <small id="total"> </small>
+            </div><!--price-->
+            <input type="number" id="count" placeholder="count">
+            <input type="text" id="catetory" placeholder="catetory">
+            <button id="submit">Create</button>
+        </div><!--inputs-->
+        <div class="outputs">
+            <div class="searchblock">
+                <input onkeyup="searchdata(this.value)" type="text" id="search" placeholder="search">
+                <div class="search" >
+                    <button onclick="getsearchmood(this.id)" id="searchtitle"> search by title </button>
+                    <button onclick="getsearchmood(this.id)" id="searchcategory"> search by category </button>
+                </div><!--searchblock-->
+                <div id="deleteall">
+
+                </div>
+                <table>
+                    <tr>
+                        <th>id</th>
+                        <th>title</th>
+                        <th>price</th>
+                        <th>taxes</th>
+                        <th>ads</th>
+                        <th>discount</th>
+                        <th>total</th>
+                        <th>category</th>
+                        <th>updates</th>
+                        <th>delete</th>
+                    </tr>
+                    <tbody id="body">
+                       
+                    </tbody>
+
+                </table>
+            </div><!--output-->
+            
+
+        </div>
+
+    </div><!--curd-->
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html> 

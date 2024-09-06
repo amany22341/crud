@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #222;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.curd{
+    width: 80%;
+    margin:0 auto;
+
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.head h1{
+    margin:5px;
+}
+/* ============================== */
+input{
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    outline:none;
+    border:none;
+    background: #111;
+    margin: 6px 0;
+    padding: 4px;
+    border-radius: 4px;
+}
+input:focus{
+    background-color: #000;
+    transform: scale(1.1);
+}
+.price input{
+    /* display: flex; */
+    width: 20%;
+
+}
+#total{
+    background-color: #a00d02;
+    padding: 6px 4px ;
+    border-radius: 4px;
+}
+#total::before{
+    content: 'Total:';
+    padding: 3px;
+
+}
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #310044;
+    color: #fff;
+    border-radius: 20px;
+    transition: .5s;
+
+}
+button:hover{
+    background-color: #51045f;
+    letter-spacing: 2px;
+}
+/* =========================================outputs */
+.search{
+    display: flex;
+    justify-content: space-between;
+
+}
+.search button{
+    width:45%;
+    
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+
+}
+table th{
+    text-transform: uppercase;
+
+}
+td,th{
+    padding: 5px;
+}
+#deleteall{
+    margin: 16px 0;
+}
+/* The alert message box */
+.alert {
+  padding: 15px;
+  background-color: #ce10b8; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
